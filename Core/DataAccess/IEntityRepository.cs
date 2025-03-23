@@ -1,9 +1,9 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
     // Generic Constraint : IEntityRepository<T> için 'where T:' koşuluyla oluşturduğumuz filtrelere verilen genel isimdir.
     // class : Bir class anlamı taşımaz, referans tip demektir. 

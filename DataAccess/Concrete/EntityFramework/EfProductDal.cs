@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
@@ -46,8 +45,8 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (NorthwindContext context = new NorthwindContext())
             {
-                return filter == null 
-                    ? context.Set<Product>().ToList() 
+                return filter == null
+                    ? context.Set<Product>().ToList()
                     : context.Set<Product>().Where(filter).ToList();
             }
         }
